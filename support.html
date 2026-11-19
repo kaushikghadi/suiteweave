@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuiteWeave – Support</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #1d2733; --muted: #5b6b7d; --bg: #ffffff; --line: #e3e8ee; --accent: #1769c2; --box: #f4f7fb; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf5; --muted: #9fb0c3; --bg: #0f1722; --line: #253244; --accent: #6fb1f2; --box: #172232; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    .contact { background: var(--box); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 20px 0; }
+    ul, ol { padding-left: 22px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SuiteWeave – Support</h1>
+  <p class="muted">Report Builder for NetSuite, by Kaushik Ghadi. Not affiliated with or endorsed by Oracle NetSuite.</p>
+
+  <div class="contact">
+    <strong>Contact:</strong> <a href="mailto:kaushikmghadi@gmail.com?subject=SuiteWeave%20support">kaushikmghadi@gmail.com</a><br>
+    Please include what you were doing, the message you saw, and a screenshot if you can. Do not send report data or API keys.
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Log in to NetSuite in a tab of the same browser.</li>
+    <li>Click the SuiteWeave icon in the toolbar. The builder opens and shows "Connected".</li>
+    <li>Choose the record your report starts from, add columns and filters, join related records, and press <strong>Run report</strong>.</li>
+  </ol>
+  <p>No NetSuite at hand? Open SuiteWeave and choose <strong>Explore with demo data</strong>.</p>
+
+  <h2>Common questions</h2>
+  <p><strong>"Not connected" or "Could not start NetSuite's query engine".</strong> Reload your NetSuite tab, check you are still logged in, then click the connection button at the top of SuiteWeave and choose Reconnect.</p>
+  <p><strong>Does SuiteWeave change anything in NetSuite?</strong> No. It is read-only: it runs only SELECT queries with your own login and role, and installs nothing in NetSuite.</p>
+  <p><strong>Ask AI says the API key is missing or rejected.</strong> Open Ask AI, then AI settings. Choose a service, paste your own key and press Test. Groq gives free keys at console.groq.com/keys; Google Gemini at aistudio.google.com/apikey.</p>
+  <p><strong>Ask AI says the daily limit is reached.</strong> Free AI tiers allow a set number of requests per day. Try again later, or choose another service in AI settings.</p>
+  <p><strong>Several NetSuite accounts.</strong> Open each account in its own tab. Click the connection button at the top of SuiteWeave to switch between them.</p>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="./">privacy policy</a>. In short: no servers, no tracking; report rows never leave your computer.</p>
+</main>
+</body>
+</html>
