@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuiteWeave – Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #1d2733; --muted: #5b6b7d; --bg: #ffffff; --line: #e3e8ee; --accent: #1769c2; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf5; --muted: #9fb0c3; --bg: #0f1722; --line: #253244; --accent: #6fb1f2; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+    p, li { color: var(--ink); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    ul { padding-left: 22px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SuiteWeave – Privacy Policy</h1>
+  <p class="muted">Report Builder for NetSuite, by Kaushik Ghadi. Last updated: 18 November 2026.</p>
+  <p>SuiteWeave is a browser extension that builds reports on NetSuite data. It is not affiliated with or endorsed by Oracle NetSuite. This policy explains what the extension does with data. In short: the developer collects nothing, there are no servers, no analytics and no tracking.</p>
+
+  <h2>What the extension reads</h2>
+  <p>When you open SuiteWeave, it works through a NetSuite tab you are already logged in to, using your own NetSuite session and role. It reads the list of NetSuite records and fields your role can see, and runs the reports you build. NetSuite decides what your role may see; the extension cannot see more than you can.</p>
+  <p><strong>Read-only.</strong> SuiteWeave never creates, changes or deletes anything in NetSuite. It runs only SELECT queries (SuiteQL, which cannot change data), reads the Records Catalog, and reads your date format preference. Any other statement typed in its SQL tab is refused before it reaches NetSuite. Links in the results open the NetSuite page in a new tab, as a normal link would.</p>
+
+  <h2>What stays on your computer</h2>
+  <ul>
+    <li>Report results are shown in the extension and, when you choose, saved by you as CSV or Excel files on your computer.</li>
+    <li>Saved reports, your AI settings (including any AI API key you enter) and a cached list of your account's records and fields are stored in your browser's extension storage on this computer. They are not sent to the developer or anyone else. Removing the extension deletes them.</li>
+  </ul>
+
+  <h2>What is sent, and to whom</h2>
+  <p>The extension sends data to two kinds of services only, both chosen by you:</p>
+  <ul>
+    <li><strong>NetSuite</strong> (your own account): the queries for your reports, sent through your logged-in NetSuite tab.</li>
+    <li><strong>An AI service, only if you use Ask AI or Write with AI</strong>, and only the one you choose in AI settings (for example Groq, Google Gemini, Anthropic Claude, OpenAI, Mistral, DeepSeek, xAI, OpenRouter, or an AI running on your own computer such as Ollama). It receives the request you type, the names of NetSuite records, fields and list values (such as transaction types, statuses and subsidiaries) that the request needs, and row counts from test runs. <strong>Report rows are never sent to an AI service.</strong> Your API key is sent only to that service, to authorise the request. That service's own privacy policy applies to what it receives.</li>
+  </ul>
+  <p>Nothing is sent to the developer of SuiteWeave. The extension contains no analytics, advertising or tracking code, and it loads no code from the internet.</p>
+
+  <h2>What the developer does not do</h2>
+  <ul>
+    <li>Does not collect, store, sell or share your data.</li>
+    <li>Does not use data for advertising, profiling or creditworthiness.</li>
+    <li>Does not transfer data to third parties, other than the AI service you choose yourself, as described above.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Access to *.app.netsuite.com</strong>: to run your reports in your logged-in NetSuite tab.</li>
+    <li><strong>scripting</strong>: to run the report queries inside that NetSuite tab, with your session.</li>
+    <li><strong>storage, unlimitedStorage</strong>: to keep your saved reports, settings and the cached list of records and fields on your computer (large NetSuite accounts have many records and fields).</li>
+    <li><strong>Optional access to other sites</strong>: asked for only when you choose an AI service, and only for that service's address (or localhost for an AI on your computer).</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>SuiteWeave is a business tool for NetSuite users and is not directed at children.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the new version will be posted at this address with a new date. Questions: <a href="mailto:kaushikmghadi@gmail.com">kaushikmghadi@gmail.com</a>.</p>
+</main>
+</body>
+</html>
