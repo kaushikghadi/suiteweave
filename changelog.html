@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuiteWeave – Changelog</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #1d2733; --muted: #5b6b7d; --bg: #ffffff; --line: #e3e8ee; --accent: #1769c2; --box: #f4f7fb; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf5; --muted: #9fb0c3; --bg: #0f1722; --line: #253244; --accent: #6fb1f2; --box: #172232; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 32px 0 4px; padding-top: 16px; border-top: 1px solid var(--line); }
+    h3 { font-size: 16px; margin: 14px 0 2px; }
+    .muted { color: var(--muted); }
+    .date { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+    a { color: var(--accent); }
+    ul { padding-left: 22px; margin: 4px 0; }
+    li { margin: 3px 0; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SuiteWeave – Changelog</h1>
+  <p class="muted">Report Builder for NetSuite, by Kaushik Ghadi. What changed in each version. <a href="support.html">Support</a> · <a href="./">Privacy policy</a> · <a href="SuiteWeave-User-Guide.pdf">User guide (PDF)</a></p>
+
+  <h2>1.0.19</h2>
+  <p class="date">28 November 2026</p>
+  <h3>Filters</h3>
+  <ul>
+    <li>Each filter offers only the conditions that fit its field: a checkbox is checked or not, a list field compared by ID is any of or none of, and so on. Conditions in saved reports are kept as they were.</li>
+    <li>Multi-select fields (for example a customer's subsidiaries) match any value you tick; names that contain a comma stay whole.</li>
+    <li>Text with line breaks (addresses) or with Chinese punctuation now matches.</li>
+    <li>Stored codes, such as a transaction status letter, can be used as filter values.</li>
+    <li>Filters by name are sped up only when every name is found; otherwise they stay by name, so no value is dropped.</li>
+  </ul>
+  <h3>Fields and columns</h3>
+  <ul>
+    <li>New reports start with the record's usual columns, like a saved search.</li>
+    <li>More fields now include fields that exist only in saved searches (for example a file's owner), tagged "search". Only those with one value per record are offered.</li>
+    <li>Fields that NetSuite computes slowly are measured in your account and marked "slow".</li>
+  </ul>
+  <h3>Value lists</h3>
+  <ul>
+    <li>The first 200 values appear at once and more keep loading; typing searches all of NetSuite straight away, even while the list is loading.</li>
+    <li>Lists of customers, items, accounts and similar records come straight from that record, sorted by name.</li>
+  </ul>
+  <h3>Speed and reliability</h3>
+  <ul>
+    <li>Reports run straight away, even while SuiteWeave is still checking fields in the background.</li>
+    <li>Lighter Excel files, so large exports open faster. If a large export is interrupted, it stops cleanly and can continue with the next part.</li>
+    <li>Record links open only when SuiteWeave is sure of the record's internal ID.</li>
+  </ul>
+
+  <h2>1.0.18</h2>
+  <p class="date">23 November 2026</p>
+  <ul>
+    <li>First public release on the Chrome Web Store, with the features of 1.0.17.</li>
+  </ul>
+
+  <h2>1.0.17</h2>
+  <p class="date">23 November 2026</p>
+  <ul>
+    <li>Name columns and filters are checked before a run: a name NetSuite cannot show, or one that would leave out rows, is shown as its stored value instead.</li>
+    <li>Add all fields of a record in one click (it asks before adding slow ones); move columns to the top or bottom, or drag them into any order.</li>
+    <li>Every field of a record, with a Show: All / Standard / More view; fields NetSuite hides but accepts (for example Script › From Bundle) are offered too.</li>
+    <li>Formula filters on rows, and formulas under Filters on the results.</li>
+    <li>Much faster first pages and exports for wide reports.</li>
+    <li>Transaction status filters by name match only the statuses chosen.</li>
+    <li>Links open files, folders and script deployments; no links for records NetSuite has no page for.</li>
+    <li>Ask AI joins records on NetSuite's own links when your request does not name the fields.</li>
+  </ul>
+
+  <h2>Earlier versions</h2>
+  <ul>
+    <li>Test releases shared with colleagues before the public launch.</li>
+  </ul>
+</main>
+</body>
+</html>
